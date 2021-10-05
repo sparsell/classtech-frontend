@@ -11,3 +11,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.wrapper {
+    border: black 2px solid;
+    border-radius: 30px;
+    margin: 5%;
+    padding: 5%;
+}
+
+.search-existing {
+    color: blue;
+}
+
+.new-student {
+   color: red; 
+}
