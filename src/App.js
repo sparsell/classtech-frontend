@@ -1,30 +1,25 @@
 import './App.css';
+import './index.css'
 import Greeting from './components/Greeting';
-import SchoolFilter from './components/SchoolFilter'
-import GradeFilter from './components/GradeFilter'
+import SearchExisting from './components/SearchExisting'
 import NewStudent from './components/NewStudent'
 
 function App() {
   return (
     <div className="App">
        
-       <div className="search">
-            <div>
+            <div className="wrapper">
                 <Greeting />
             </div>
 
             <div>
-                <SchoolFilter />
+                <SearchExisting />
             </div>
-
-            <div>
-                <GradeFilter />
-            </div>
-        </div>
-
-        <h2> OR:</h2>
         
-        <div>
+
+        <h2>--- OR ---</h2>
+        
+            <div>
                 <NewStudent />
             </div>
       
