@@ -5,7 +5,8 @@ class SchoolFilter extends React.Component {
     render() {
         return (
             <div className="school filter">
-                <h3>Choose your school</h3>
+                
+                <h3>School:</h3>
                     <div className="school field">
                         <select name="type"
                                 id="type">

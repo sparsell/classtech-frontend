@@ -4,7 +4,11 @@ class Greeting extends React.Component {
 
     render() {
         return (
-            <h2>Welcome to ClassTech</h2>
+            <div>
+                <h1>ClassTech</h1>
+                <h4>"No darling, not everyone in your class has a phone."</h4>
+                <p> - every parent</p>
+            </div>
         )
     }
 }

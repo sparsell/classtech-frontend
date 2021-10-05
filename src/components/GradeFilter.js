@@ -4,7 +4,7 @@ class GradeFilter extends React.Component {
     render() {
         return (
             <div className="grade filter">
-            <h3> Choose your student's grade: </h3>
+            <h3> Grade: </h3>
                 <select>
                     <option>2nd Grade</option>
                     <option>3rd Grade</option>
