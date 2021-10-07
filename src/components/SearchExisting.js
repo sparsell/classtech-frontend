@@ -7,7 +7,7 @@ class SearchExisting extends React.Component {
     render() {
         return (
             <div className="search-existing">
-            <h2>Search by grade:</h2>
+            <h2>See the results</h2>
                 <div>
                     <SchoolFilter />
                 </div>
