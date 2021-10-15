@@ -1,13 +1,12 @@
 import React from 'react'
+import NewStudentForm from './NewStudentForm'
 
 class NewStudent extends React.Component {
     render() {
         return (
-         <div className="new-student" class="col-sm">
-            <h3>Add a student:</h3>
-                <p>Student's Name:</p>
-                <p>Student's Grade:</p>
-            </div>
+         <div className="action-container">
+            <NewStudentForm />
+        </div>
             )
         }
     }
