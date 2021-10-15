@@ -22,8 +22,19 @@ code {
 
 .search-existing {
     color: blue;
+    border: black 2px solid;
 }
 
-.new-student {
-   color: red; 
+.logo {
+    background-color: #eee;
+    /* display: inline-block; */
+    margin: 2em;
+    padding: .5em;
+}
+
+.action-container {
+    background-color: white;
+    border: 1px solid grey;
+    margin: 2em;
+    padding: .5em;
 }
