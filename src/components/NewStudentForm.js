@@ -1,52 +1,57 @@
 import React from 'react'
-// import Button from 'react-bootstrap/Button';
+// import SchoolFilter from "./SchoolFilter"
+// import GradeFilter from "./GradeFilter"
 
 class NewStudentForm extends React.Component {
 
-    constructor() {
-        super()
-        this.state = {value: ''}
-
+    constructor(props) {
+        super(props)
+        this.state = {
+            name: '',
+            school: '',
+            grade: ''
+        }
         this.handleChange = this.handleChange.bind(this)
-        this.handleSubmit = this.handleNameSubmit.bind(this)
-        this.handleSubmit = this.handleGradeSubmit.bind(this)
+        this.handleSubmit = this.handleSubmit.bind(this)
     }
 
-    handleChange(event) {
-        this.setState({value: event.target.value})
-    }
-
-    handleNameSubmit(event) {
-        alert(`${this.state.value} was added`)
-        event.preventDefault()
-    }
-
-    handleGradeSubmit(event) {
-        alert("A new student was added")
-        event.preventDefault()
-    }
+        handleChange(event) {
+            this.setState({name: event.target.value})
+        }
+        handleSubmit(event) {
+            event.preventDefault()
+        }
 
     render() {
         return (
-         <div className="new-student" class="col-sm">
+         <div className="new-student">
               <h3>Add a student</h3>
-                <form onSubmit={this.handleNameSubmit}>
-                    <label>
-                    Name:
-                    <input type="text" value={this.state.value} onChange={this.handleNameChange}/>
-                    </label>
+                <form onSubmit={this.handleSubmit}>
+                    <label>Name:</label>
+                    <input type="text" value={this.state.value} />
 
-                    <label>
-                    Grade:
-                    <input type="text" value={this.state.value} onChange={this.handleGradeSubmit} />
-                    </label>
-                      {/* <Button variant="secondary" type="submit" value="submit">
-                        Add Product
-                    </Button> */}
+                    <label>School:</label>
+                    <input type="select" />
+
+                    <label>Grade:</label>
+                    <input type="select" />
+
+                    <input type="submit"></input>
                 </form>
         </div>
             )
         }
-    }
 
-    export default NewStudentForm
+
+    // render() {
+    //     return (
+    //         <div>
+    //             <SchoolFilter />
+    //             <GradeFilter />
+    //         </div>
+    
+    //     )
+    // }
+}
+
+export default NewStudentForm
