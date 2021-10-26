@@ -25,7 +25,6 @@ class SeeResultsForm extends React.Component {
 
                     <label>Grade:</label>
                     <GradeFilter />
-                   c */}
                     <input type="submit"></input>
             </form>        
         </div>
