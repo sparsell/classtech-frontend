@@ -1,6 +1,6 @@
 import React from 'react'
 // import SchoolFilter from './components/SchoolFilter'
-// import GradeFilter from './components/GradeFilter'
+import GradeFilter from './GradeFilter'
 
 class SeeResultsForm extends React.Component {
     constructor() {
@@ -11,7 +11,7 @@ class SeeResultsForm extends React.Component {
             grade: ''
         }
     }
-        handleSubmit(event) {
+        handleGradeSubmit(event) {
             event.preventDefault()
         }
 
@@ -19,11 +19,13 @@ class SeeResultsForm extends React.Component {
         return (
         <div>
             <form onSubmit={this.handleSubmit}>
-                <label>School:</label>
-                    <input type="select" onChange={this.handleNameChange} value={this.state.value} />
+            
+                {/* <label>School:</label>
+                    <input type="select" onChange={this.handleNameChange} value={this.state.value} /> */}
 
                     <label>Grade:</label>
-                    <input type="text" value={this.state.value} onChange={this.handleGradeSubmit} />
+                    <GradeFilter />
+                   c */}
                     <input type="submit"></input>
             </form>        
         </div>
