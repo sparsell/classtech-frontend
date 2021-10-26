@@ -10,10 +10,10 @@ import reportWebVitals from './reportWebVitals';
 import App from './App';
 
 
-// set up store
+// set up Redux dev tools
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
-
+// set up store
 const store = createStore(
     gradeReducer, 
     composeEnhancers(applyMiddleware(thunk))
