@@ -1,14 +1,12 @@
 import React from 'react'
 
-const LandingPageImage = { 
+const LandingPageImage = () => { 
 
-    <div
-        class="bg-image"
-        style="
-        background-image: url('./public/kids_with_phone');
-        height: 100vh;">
-        
+    return (
+    <div>
+        Image
     </div>
+    )
 }   
 
 export default LandingPageImage
