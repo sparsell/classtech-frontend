@@ -1,6 +1,5 @@
 import React from 'react'
-// import SchoolFilter from "./SchoolFilter"
-// import GradeFilter from "./GradeFilter"
+import GradeFilter from "./GradeFilter"
 
 class NewStudentForm extends React.Component {
 
@@ -25,6 +24,7 @@ class NewStudentForm extends React.Component {
     render() {
         return (
          <div className="new-student">
+         NewStudentForm
               <h3>Add a student</h3>
                 <form onSubmit={this.handleSubmit}>
                     <label>Name:</label>
@@ -34,24 +34,14 @@ class NewStudentForm extends React.Component {
                     <input type="select" />
 
                     <label>Grade:</label>
-                    <input type="select" />
+                    {/* <input type="select" /> */}
+                    <GradeFilter />
 
                     <input type="submit"></input>
                 </form>
         </div>
             )
         }
-
-
-    // render() {
-    //     return (
-    //         <div>
-    //             <SchoolFilter />
-    //             <GradeFilter />
-    //         </div>
-    
-    //     )
-    // }
-}
+    }
 
 export default NewStudentForm
