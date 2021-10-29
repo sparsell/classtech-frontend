@@ -4,26 +4,19 @@ class SchoolFilter extends React.Component {
 
     render() {
         return (
-//             {this.props.categories((items , index)=>{
-//   <option key{index}>{items.categoryName} </option>
-// })}
-            <div className="block-example">
-                <h3>School:</h3>
-                        <select name="type"
-                                id="type">
-                            <option>Parkway</option>
-                            <option>Glenville</option>
-                            <option>Western Middle</option>
-                            <option>Central Middle</option>
-                            <option>Eastern Middle</option>
-                        </select>
-            </div>
+            <select name="type"
+                    id="type">
+                <option value="" disabled selected>Select school</option>
+                <option>North Street</option>
+                <option>Riverside</option>
+                <option>Parkway</option>
+                <option>Glenville</option>
+                <option>Western Middle</option>
+                <option>Central Middle</option>
+                <option>Eastern Middle</option>
+            </select>
             )
         }
     }
-
-
-
-
 
 export default SchoolFilter
