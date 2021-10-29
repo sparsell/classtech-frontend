@@ -1,13 +1,13 @@
 import React from 'react'
 
-class Students extends React.Component {
-    render() {
+const Students = props => {
+    console.log(props)
+
     return (
         <div>
-        Students
+        {props.students.map(student => <li key={student.id}>{student.name}</li>)}
         </div>
-        )
-    }
+    )
 }
 
 export default Students
