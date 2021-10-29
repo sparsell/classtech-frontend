@@ -2,12 +2,13 @@ import React from 'react'
 
 const Greeting = () => {
     return (
-            <div className="logo">
-                GreetingComponent
-                <h1>ClassTech</h1>
-                <p>"No darling, not everyone in your class has a phone."</p>
-                <p> - every parent</p>
+        <container>
+            <div class="ui center aligned container" id="greeting">
+                <h1 className="greeting-header">ClassTech</h1>
+                <p className="tagline">"You see darling, not everyone in your class has a phone."</p>
+                <p><em> - every parent</em></p>
             </div>
+        </container>
         )
 }
 
