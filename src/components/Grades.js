@@ -6,9 +6,8 @@ const Grades = (props) => {
 
         return (
             <div>
-            
                 Grades Component
-                {props.grades.map(grade => <li key={grade.id}>{grade.grade_name}</li>)}
+                {props.grades.map(grade => <ul key={grade.id}>{grade.grade_name}</ul>)}
             </div>
         )
 }
