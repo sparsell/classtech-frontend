@@ -1,8 +1,9 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const ShowResultsButton = () => {
     return (
-        <button className="ui primary button"> Show Me</button>
+        <Link to={'/grades'}><button className="ui primary button"> View by Grade</button></Link>
     )
 }
 
