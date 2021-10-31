@@ -3,7 +3,7 @@ import React from 'react'
 const GradeFilter = () => {
     return (
             <select>
-                <option value="" disabled selected>Select grade</option>
+                <option value="" disabled selected>Select Your Grade</option>
                 <option value="2">2nd Grade</option>
                 <option value="3">3rd Grade</option>
                 <option value="4">4th Grade</option>
