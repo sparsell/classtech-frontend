@@ -7,16 +7,9 @@ const LandingPageImage = () => {
     return (
     <div>
     image here
-        <image src={'./images/kids_with_phone.jpg'} />
+        <image src={'./images/kids_with_phone.jpg'} alt="two kids looking at a phone"/>
     </div>
     )
 }   
 
 export default LandingPageImage
-
-
-// const SampleComponent = () => (
-//   <div>
-//     <img src={require('./styles/images/deadline.png')} alt="Test" />
-//   </div>
-// );
