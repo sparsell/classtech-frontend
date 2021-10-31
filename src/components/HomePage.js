@@ -1,27 +1,40 @@
 import React from 'react'
-import GradeFilter from '../components/GradeFilter'
-import SchoolFilter from '../components/SchoolFilter'
+import Greeting from '../components/Greeting'
+import Intro from '../components/Intro'
 import NewStudentButton from '../components/NewStudentButton'
 import ShowResultsButton from '../components/ShowResultsButton'
-import SeeResultsForm from '../components/SeeResultsForm'
-
-// import { Link } from 'react-router-dom';
-// import Button from 'react-bootstrap/Button'
-
+import LandingPageImage from '../components/LandingPageImage'
+// import NewStudentForm from './NewStudentForm'
 
 
 const HomePage = () => {
     return (
         <div>
-            <h1 className="question">Who has a phone in <GradeFilter /> at <SchoolFilter /> ?</h1>
             <div>
-                <ShowResultsButton  />
-             </div>
+                <Greeting />
+            </div>
+
+             <h1> Who has a phone in your grade?</h1>
+
             <div>
-                <SeeResultsForm />
+                <LandingPageImage />
+            </div>
+             <div>
+                <Intro />
+            </div>
+
+            <br></br>
+            <br></br>
+
+            <div>
+                <ShowResultsButton />
+               
                 <h3> -- OR -- </h3>
                 <NewStudentButton />
+                
             </div>
+
+           
         </div>
     )
 }
