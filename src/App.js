@@ -2,11 +2,9 @@ import './App.css';
 import './index.css'
 import React from 'react'
 import { connect } from 'react-redux'
-import { Route } from 'react-router';
-import GradesContainer from './containers/GradesContainer.js'
-import Greeting from './components/Greeting.js'
-import LandingPageImage from './components/LandingPageImage.js'
+import { Route } from 'react-router-dom'
 import HomePage from './components/HomePage.js'
+import Footer from './components/Footer'
 
 class App extends React.Component {
 
@@ -14,13 +12,8 @@ class App extends React.Component {
             return (
                 <div>
                     <div className="App">
-                        {/* <div className="logo" style={{backgroundImage: `url(${image}` }}></div> */}
-                        <Greeting />
-                         <LandingPageImage />
-                        <div className="justify-content-md=center">
-                            <GradesContainer />
-                            <Route exact path='/' render={() => <HomePage />} />
-                        </div>
+                         <Route exact path='/' render={() => <HomePage />} />
+                         <Footer />
                     </div>
                 </div>
             ) 
