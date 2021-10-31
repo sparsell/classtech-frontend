@@ -13,7 +13,6 @@ class NewStudentForm extends React.Component {
             has_other_device: false,
             screen_time: ''
         }
-    
         
         handleChange = (event) => {
             this.setState({
@@ -33,12 +32,21 @@ class NewStudentForm extends React.Component {
         handleSubmit = (event) => {
             event.preventDefault()
             this.props.addStudent(this.state)
+            this.setState({
+                name: '',
+            school: '',
+            // grade_name: '', 
+            grade_id: '', 
+            has_phone: false,
+            has_other_device: false,
+            screen_time: ''
+            })
         }
-
 
     render() {
         return (
          <div className="form-container">
+         <h3>Add a Student</h3>
                 <form className="ui form" onSubmit={this.handleSubmit}>
                     <label>Name:</label>
                     <input 
@@ -58,8 +66,7 @@ class NewStudentForm extends React.Component {
                     value={this.state.grade_id}
                     name="grade_id"
                     onChange={this.handleChange}>
-                        {/* <GradeFilter /> */}
-                    <option value="" disabled selected>Select grade</option>
+                    <option value="" disabled selected>Select Your Grade</option>
                         <option value="2">2nd Grade</option>
                         <option value="3">3rd Grade</option>
                         <option value="4">4th Grade</option>
@@ -77,7 +84,7 @@ class NewStudentForm extends React.Component {
                         value={this.state.school} 
                         name="school"
                         onChange={this.handleChange}> 
-                            <option value="" disabled selected>Select school</option>
+                            <option value="" disabled selected>Select Your School</option>
                             <option>North Street</option>
                             <option>Riverside</option>
                             <option>Parkway</option>
@@ -90,8 +97,7 @@ class NewStudentForm extends React.Component {
                     <br></br>
                     <br></br>
 
-                    <label>
-                    My child has a phone (check if "yes"):
+                    <label>My child has a phone (check if "yes"):</label>
                     <input
                         name="has_phone"
                         type="checkbox"
@@ -99,12 +105,10 @@ class NewStudentForm extends React.Component {
                         value={this.state.has_phone}
                         onChange={this.handleCheckbox} 
                     />
-                  
-                    </label>
-
+        
                     <br></br>
 
-                    <label>My child has another / a different electronic device (check box if "yes"): </label>
+                    <label>My child has another / a different electronic device (check box if "yes"):</label>
                     <input 
                         type="checkbox" 
                         name="has_other_device"
@@ -112,20 +116,21 @@ class NewStudentForm extends React.Component {
                         onChange={this.handleCheckbox}
                     />
                     <br></br>
-
-                    <label>What screen time limits (if any) does your child have?    </label>
-                    <input 
-                    type="textarea" 
-                        name="screen_time"
-                        value={this.state.screen_time} 
-                        onChange={this.handleChange}
-                    />
+                    <div>
+                        <label>What screen time limits (if any) does your child have?    </label>
+                        <input 
+                        type="textarea" 
+                            name="screen_time"
+                            value={this.state.screen_time} 
+                            onChange={this.handleChange}
+                        />
+                    </div>
                    <br></br>
                    <br></br>
 
                     <input 
                         className="ui primary button" 
-                        type="submit"
+                        type="submit" value="Add Student"
                     />
                 </form>
         </div>
