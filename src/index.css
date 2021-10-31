@@ -59,3 +59,14 @@ color: white;
     padding: .1em;
     margin: .5em;
 }
+
+.intro {
+    margin: 2em;
+    padding: 1em;
+    border: 2px solid black;
+}
+
+.footer {
+    margin: 0;
+    padding: 20em;
+}
