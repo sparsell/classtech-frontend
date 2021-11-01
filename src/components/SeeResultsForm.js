@@ -1,17 +1,19 @@
 import React from 'react'
-// import { connect } from 'react-redux'
+import { connect } from 'react-redux'
+import fetchGrades from '../actions/fetchGrades'
 
 class SeeResultsForm extends React.Component {
     constructor() {
         super()
         this.state = {
-            name: '',
+            // name: '',
             school: '',
             grade_id: ''
         }
     }
 
         handleChange = (event) => {
+            // debugger
             this.setState({
                 [event.target.name]: event.target.value
             })
@@ -19,6 +21,10 @@ class SeeResultsForm extends React.Component {
 
         handleSubmit = (event) => {
             event.preventDefault()
+            this.props.fetchGrades(this.state)
+            this.setState({
+
+            })
             
         }
 
@@ -29,8 +35,6 @@ class SeeResultsForm extends React.Component {
 
                   <label>Grade:</label>
                     <select 
-                        // value={this.state.grade_name}
-                        // name="grade_name"
                         value={this.state.grade_id}
                         name="grade_id"
                         onChange={this.handleChange}>
@@ -67,4 +71,4 @@ class SeeResultsForm extends React.Component {
     }
 }
 
-export default SeeResultsForm
+export default connect(null, {fetchGrades})(SeeResultsForm)
