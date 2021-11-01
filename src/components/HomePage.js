@@ -4,7 +4,10 @@ import Intro from '../components/Intro'
 import NewStudentButton from '../components/NewStudentButton'
 import ShowResultsButton from '../components/ShowResultsButton'
 import LandingPageImage from '../components/LandingPageImage'
-// import NewStudentForm from './NewStudentForm'
+import SeeResultsForm from './SeeResultsForm'
+import NewStudentForm from './NewStudentForm'
+import GradesContainer from '../containers/GradesContainer'
+// import StudentCard from '../components/StudentCard'
 
 
 const HomePage = () => {
@@ -27,10 +30,15 @@ const HomePage = () => {
             <br></br>
 
             <div>
+            <GradesContainer />
                 <ShowResultsButton />
+                <SeeResultsForm />
+                {/* <Grades /> */}
                
                 <h3> -- OR -- </h3>
                 <NewStudentButton />
+                <NewStudentForm />
+                {/* <StudentCard /> */}
                 
             </div>
 
