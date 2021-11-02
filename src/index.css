@@ -63,7 +63,7 @@ color: white;
 .intro {
     margin: 2em;
     padding: 1em;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 .footer {
