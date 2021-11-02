@@ -1,9 +1,9 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import NewStudent from '../components/NewStudent.js'
-import SeeResults from '../components/SeeResults.js' 
-import { fetchStudents } from '../actions/fetchStudents.js'
-// import Students from '../components/Students.js'
+// import NewStudent from '../components/NewStudent.js'
+// import SeeResults from '../components/SeeResults.js' 
+import fetchStudents from '../actions/fetchStudents.js'
+import Students from '../components/Students.js'
 
 class StudentsContainer extends React.Component {
 
@@ -12,12 +12,12 @@ class StudentsContainer extends React.Component {
         }
 
     render() {
-        // console.log("Students container data", this.props.students)
+        console.log("Students container data", this.props.students)
         return (
             <div>
-                <NewStudent />
-                <SeeResults />
-                {/* <Students grades={this.props.students}/> */}
+                {/* <NewStudent />
+                <SeeResults /> */}
+                <Students students={this.props.students}/>
             </div>
         )
     }
