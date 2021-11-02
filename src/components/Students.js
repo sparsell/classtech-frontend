@@ -5,9 +5,10 @@ const Students = props => {
 
     return (
         <div>
-        {props.students.map(student => <li key={student.id}>{student.name}</li>)}
+        {props.students.map(student => <ul key={student.id}>{student.name}</ul>)}
         </div>
     )
 }
 
 export default Students
+
