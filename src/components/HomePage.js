@@ -7,7 +7,7 @@ import LandingPageImage from '../components/LandingPageImage'
 import SeeResultsForm from './SeeResultsForm'
 import NewStudentForm from './NewStudentForm'
 import GradesContainer from '../containers/GradesContainer'
-// import StudentCard from '../components/StudentCard'
+import StudentsContainer from '../containers/StudentsContainer'
 
 
 const HomePage = () => {
@@ -21,8 +21,6 @@ const HomePage = () => {
 
             <div>
                 <LandingPageImage />
-            </div>
-             <div>
                 <Intro />
             </div>
 
@@ -31,14 +29,15 @@ const HomePage = () => {
 
             <div>
             <GradesContainer />
-                <ShowResultsButton />
-                <SeeResultsForm />
-                {/* <Grades /> */}
+                <br></br>
+                <br></br>
+                {/* <ShowResultsButton /> */}
+
                
                 <h3> -- OR -- </h3>
                 <NewStudentButton />
-                <NewStudentForm />
-                {/* <StudentCard /> */}
+                {/* <NewStudentForm /> */}
+                {/* <StudentsContainer /> */}
                 
             </div>
 
