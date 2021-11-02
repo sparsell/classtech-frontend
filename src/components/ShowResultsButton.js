@@ -1,10 +1,15 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import SeeResultsForm from './SeeResultsForm'
 
-const ShowResultsButton = () => {
+// const ShowResultsButton = () => {
+class ShowResultsButton extends React.Component {
+
+    render() {
     return (
-        <Link to={'/grades'}><button className="ui primary button"> View by Grade</button></Link>
-    )
+        <Link to={'/gradesearch'}><button onClick={this.handleClick} className="ui primary button"> View by Grade</button></Link>
+        )
+    }
 }
 
 export default ShowResultsButton
