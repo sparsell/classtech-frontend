@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import SeeResultsForm from './SeeResultsForm'
 
 // const ShowResultsButton = () => {
 class ShowResultsButton extends React.Component {
