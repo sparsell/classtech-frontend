@@ -1,6 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { addStudent } from '../actions/addStudent.js'
+import { Link } from 'react-router-dom'
 
 class NewStudentForm extends React.Component {
     
@@ -31,7 +32,7 @@ class NewStudentForm extends React.Component {
 
         handleSubmit = (event) => {
             event.preventDefault()
-            this.props.addStudent(this.state)
+            this.props.addStudent(this.state, this.props.history)
             this.setState({
                 name: '',
             school: '',
@@ -41,6 +42,7 @@ class NewStudentForm extends React.Component {
             has_other_device: false,
             screen_time: ''
             })
+            // this.props.router.push('/student/show')
         }
 
     render() {
@@ -132,7 +134,9 @@ class NewStudentForm extends React.Component {
                         className="ui primary button" 
                         type="submit" value="Add Student"
                     />
+                    <Link to="/" className="ui primary button">Home</Link>
                 </form>
+                
         </div>
             )
         }
