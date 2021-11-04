@@ -70,3 +70,9 @@ color: white;
     margin: 0;
     padding: 20em;
 }
+
+.grade-card {
+    margin: 2em;
+    padding: 1em;
+    border: 2px solid black;
+}
