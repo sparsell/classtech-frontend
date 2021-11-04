@@ -10,7 +10,7 @@ const Grades = (props) => {
                     <div>
                         {/* {props.grades.students.map(grade => <ul key={grade.id}>{grade.grade_name}</ul>)} */}
                         {props.grades.map(grade => 
-                        <Link to={`/grades/${grade.id}/students`}> <button className="ui primary button" key={grade.id}>{grade.grade_name}</button></Link>)}
+                        <Link to={`/grades/${grade.id}/students`}> <button className="ui primary button grades" key={grade.id}>{grade.grade_name}</button></Link>)}
                 </div>
             </div>
         )
