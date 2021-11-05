@@ -11,7 +11,7 @@ const HomePage = () => {
             <div>
                 <Greeting />
                 </div>
-                <h1> Who has a phone in your grade?</h1>
+                    <h1 className="greeting"> Who has a phone in your grade?</h1>
                 <div>
                 <LandingPageImage />
                 <Intro />
@@ -20,7 +20,7 @@ const HomePage = () => {
             <br></br>
             <br></br>
 
-            <div>
+            <div className="homepage-buttons">
                 <ShowResultsButton />
                 <h3> -- OR -- </h3>
                 <NewStudentButton />   
