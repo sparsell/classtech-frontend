@@ -1,4 +1,4 @@
-Use this frontend repo with <a href="https://github.com/sparsell/classtech-backend">classtech-backend to run the app.</a>
+Use this frontend repo with <a href="https://github.com/sparsell/classtech-backend">'classtech-backend'</a> to run the app.
 
 ClassTech is a React/Redux application with a Rails API. 
 
