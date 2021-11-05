@@ -3,7 +3,7 @@
 const Intro = () => {
     return (
         <div className="intro">
-          <p>We know...everyone in your class SAYS they have a phone but do they {<em>really</em>}?</p>
+          <h3>We know...everyone in your class SAYS they have a phone but do they {<em>really</em>}? Find out below. </h3>
         </div>
     )
 }
