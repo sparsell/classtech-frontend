@@ -1,4 +1,27 @@
-Use with <a href="https://github.com/sparsell/classtech-backend">classtech-backend</a>
+Use this frontend repo with <a href="https://github.com/sparsell/classtech-backend">classtech-backend to run the app.</a>
+
+ClassTech is a React/Redux application with a Rails API. 
+
+1. After forking on Github and cloning onto your computer, run:
+
+npm install
+
+2. To start up your frontend server, run:
+
+npm start
+
+3. After cloning the <a href="https://github.com/sparsell/classtech-backend">backend repo </a> you must create your database:
+
+rake db:create
+
+rake db: migrate
+
+rake db:seed //necessary to create the grades
+
+4. Start your backend on a local server:
+
+rails s
+
 
 # Getting Started with Create React App
 
