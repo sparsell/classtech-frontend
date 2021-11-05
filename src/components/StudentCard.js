@@ -6,26 +6,30 @@ const StudentCard = (props) => {
     
     const student = props.student
     console.log(student)
+
+    const phoneCheck = (student) => {
+        debugger
+    const hasPhone = student.has_phone;
+        if (hasPhone) {
+            return <a><Icon name='check' /></a>;
+        }   
+        return <a><Icon name='x' /></a>;
+}
+
     return (
-        <div className="card-container"
-        style={{
-          width: "50%",
-          border: "solid 3px #d3d3d3",
-          margin: "10px auto"
-        }}
-        >   <div>
-                <p>{student.name}</p>
-                <p>{student.school} School</p>
-                <p>Has a phone? {student.has_phone.value}</p>
-                <p>Has a different device?{student.has_other_device}</p>
-                <p>{student.screen_time}</p>
-            </div>
-
-        
-
-        </div>
+    <div className="ui card">
+       <Card>
+       <Card.Header>{student.phoneCheck}</Card.Header>
+        <Card.Content>
+            <Card.Header>{student.name}</Card.Header>
+                <Card.Meta>{student.school} School</Card.Meta>
+                <Card.Meta>{student.has_phone}</Card.Meta>
+                <Card.Meta>{student.has_other_device}</Card.Meta>
+                <Card.Description>{student.screen_time}</Card.Description>
+        </Card.Content>
+    </Card>
+    </div>
     )
-//    check if has_phone = true, x if has_phone = false
     
 }
 
