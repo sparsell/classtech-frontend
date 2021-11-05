@@ -1,14 +1,10 @@
 import React from 'react'
+import { Image } from 'semantic-ui-react'
+import myImage from '../images/kids_with_phone.jpg'
 
 const LandingPageImage = () => { 
-
-    // const image  = ''
-
     return (
-    <div>
-    image here
-        <image src={'./images/kids_with_phone.jpg'} alt="two kids looking at a phone"/>
-    </div>
+    <Image src={ myImage } className="homepage-image"/>
     )
 }   
 
