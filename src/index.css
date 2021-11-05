@@ -61,9 +61,13 @@ color: white;
 }
 
 .intro {
-    margin: 2em;
-    padding: 1em;
-    /* border: 2px solid black; */
+    margin-top: 2em;
+    padding: 1em; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border: 2px solid black;
 }
 
 .footer {
@@ -75,4 +79,20 @@ color: white;
     margin: 2em;
     padding: 1em;
     border: 2px solid black;
+}
+
+.homepage-image {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.greeting {
+    font-size: 2.5em;
+    margin: .7em;
+}
+
+.homepage-buttons h3 {
+    margin: 1em;
 }
