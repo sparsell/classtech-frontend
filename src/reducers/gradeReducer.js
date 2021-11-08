@@ -8,8 +8,7 @@ export default function gradeReducer(state = {grades: []}, action) {
                 ...state,
                 grades: action.payload
             }
-
-       default:
-    return state
+        default:
+        return state
     }
 }

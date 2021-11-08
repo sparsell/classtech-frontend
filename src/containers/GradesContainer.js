@@ -8,13 +8,10 @@ class GradesContainer extends React.Component {
 
     componentDidMount() {
             this.props.fetchGrades()
-            //  debugger
-        }
+    }
 
     render() {
-        // console.log("Grades Container data", this.props.grades)
         return (
-           
             <div>
             <Grades grades={this.props.grades}/>
             </div>
@@ -26,6 +23,6 @@ class GradesContainer extends React.Component {
         return {
             grades: state.grades
         }
-    }
+}
 
 export default connect(mapStateToProps, {fetchGrades})(GradesContainer)

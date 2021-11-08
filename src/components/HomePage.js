@@ -10,9 +10,9 @@ const HomePage = () => {
         <div>
             <div>
                 <Greeting />
-                </div>
-                    <h1 className="greeting"> Who has a phone in your grade?</h1>
-                <div>
+                    </div>
+                        <h1 className="greeting"> Who has a phone in your grade?</h1>
+                    <div>
                 <LandingPageImage />
                 <Intro />
             </div>

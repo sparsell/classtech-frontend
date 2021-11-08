@@ -10,7 +10,7 @@ const StudentCard = (props) => {
             if (hasPhone) {
                 return <p><Icon name='check' className="has-phone-true"/> has a phone</p>
             }   
-            return <p><Icon name='x' className="has-phone-false"/> does not have a phone</p>;
+                return <p><Icon name='x' className="has-phone-false"/> does not have a phone</p>;
     }
 
     const otherDeviceCheck = (student) => {
@@ -18,23 +18,22 @@ const StudentCard = (props) => {
             if (hasOtherDevice) {
                 return <p><Icon name='check' className="has-phone-true"/> has another device</p>
             }
-            return <p><Icon name='x' className="has-phone-false"/> doesn't have another device</p>
+                return <p><Icon name='x' className="has-phone-false"/> doesn't have another device</p>
     }
 
     return (
-    <div className="ui card">
-       <Card>
-        <Card.Content>
-            <Card.Header>{student.name}</Card.Header>
-             <Card.Meta>{student.school} School</Card.Meta>
-            <Card.Description>{phoneCheck(student)}</Card.Description>
-            <Card.Description>{otherDeviceCheck(student)}</Card.Description>
-            <Card.Description><p><Icon name='ban'/>{student.screen_time}</p></Card.Description>
-        </Card.Content>
-    </Card>
-    </div>
-    )
-    
+        <div className="ui card">
+            <Card>
+                <Card.Content>
+                    <Card.Header>{student.name}</Card.Header>
+                        <Card.Meta>{student.school} School</Card.Meta>
+                        <Card.Description>{phoneCheck(student)}</Card.Description>
+                        <Card.Description>{otherDeviceCheck(student)}</Card.Description>
+                        <Card.Description><p><Icon name='ban'/>{student.screen_time}</p></Card.Description>
+                </Card.Content>
+            </Card>
+        </div>
+    ) 
 }
 
 export default StudentCard
