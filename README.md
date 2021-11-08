@@ -16,7 +16,7 @@ rake db:create
 
 rake db: migrate
 
-rake db:seed //necessary to create the grades
+rake db:seed //this is necessary to create the grades
 
 4. Start your backend on a local server:
 
