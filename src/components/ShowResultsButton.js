@@ -6,7 +6,7 @@ class ShowResultsButton extends React.Component {
 
     render() {
     return (
-        <Link to={'/gradesearch'}><button onClick={this.handleClick} className="ui primary button"> View by Grade</button></Link>
+        <Link to={'/grades'}><button onClick={this.handleClick} className="ui primary button"> View by Grade</button></Link>
         )
     }
 }

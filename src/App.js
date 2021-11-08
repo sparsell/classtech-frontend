@@ -17,7 +17,7 @@ class App extends React.Component {
                 <div>
                     <div className="App">
                          <Route exact path='/' render={() => <HomePage />} />
-                         <Route exact path='/gradesearch' render={() => <GradesContainer />} />
+                         <Route exact path='/grades' render={(routeProps) => <GradesContainer {...routeProps}/>} />
                          <Route exact path='/students/new' render={(routeProps) => <NewStudentForm {...routeProps}/>} />
                          <Route exact path="/student/:id" render={(routeProps) => <StudentCard {...routeProps}/>} />
                          <Route exact path='/grades/:id/students' render={(routeProps) => <GradeCard {...routeProps}/>} />
