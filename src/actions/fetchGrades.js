@@ -5,7 +5,7 @@ export default function fetchGrades() {
             .then(res => res.json())
             .then(grades => dispatch({
                 type: 'FETCH_GRADES',
-                payload: grades,
+                payload: grades
                 }))
     }
 }

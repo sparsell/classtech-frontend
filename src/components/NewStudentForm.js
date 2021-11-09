@@ -133,8 +133,7 @@ class NewStudentForm extends React.Component {
                     />
 
                     <Link to="/" className="ui primary button">Home</Link>
-                </form>
-                
+                </form>  
         </div>
         )
     }
