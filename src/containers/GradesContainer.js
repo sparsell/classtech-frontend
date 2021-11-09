@@ -8,6 +8,7 @@ class GradesContainer extends React.Component {
 
     componentDidMount() {
             this.props.fetchGrades()
+         
     }
 
     render() {

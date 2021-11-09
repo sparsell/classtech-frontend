@@ -1,5 +1,6 @@
 import React from 'react'
-import { Card, Icon} from 'semantic-ui-react'
+import { Card, Icon } from 'semantic-ui-react'
+import LikeButton from './LikeButton'
 
 const StudentCard = (props) => {
     
@@ -30,6 +31,7 @@ const StudentCard = (props) => {
                         <Card.Description>{phoneCheck(student)}</Card.Description>
                         <Card.Description>{otherDeviceCheck(student)}</Card.Description>
                         <Card.Description><p><Icon name='ban'/>{student.screen_time}</p></Card.Description>
+                        <LikeButton />
                 </Card.Content>
             </Card>
         </div>

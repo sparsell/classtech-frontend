@@ -9,5 +9,7 @@ export const addStudent = (data) => {
         method: 'POST',
         body: JSON.stringify({student: data})
       })
+      .then(response => response.json())
+      .then(student => dispatch({type: 'ADD_STUDENT', payload: student}))
     }
 }

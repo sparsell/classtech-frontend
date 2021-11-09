@@ -102,5 +102,8 @@ color: white;
 .ui.card {
 text-align: left;
 line-height: 1.25em;
+}
 
+.like-button {
+    display: inline;
 }

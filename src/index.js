@@ -7,15 +7,17 @@ import { BrowserRouter as Router} from 'react-router-dom';
 import { Provider } from 'react-redux'
 import gradeReducer from './reducers/gradeReducer'
 import studentReducer from './reducers/studentReducer'
+import counterReducer from './reducers/counterReducer'
 
 import App from './App';
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
 
-const rootReducer = combineReducers({
-    studentReducer, 
-    gradeReducer
-})
+// const rootReducer = combineReducers({
+    // studentReducer, 
+    // gradeReducer,
+    // counterReducer
+// })
 
 const store = createStore(
     gradeReducer,
