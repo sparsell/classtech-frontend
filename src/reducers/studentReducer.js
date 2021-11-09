@@ -1,5 +1,3 @@
-// keeps track of all students
-
 export default function studentReducer(state = {students: []}, action) {
 
     switch (action.type) {
