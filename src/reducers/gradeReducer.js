@@ -1,7 +1,5 @@
-// import { combineReducders, combineReducers } from 'redux'
-
 export default function gradeReducer(state = {grades: []}, action) {
-
+console.log(state, action)
     switch (action.type) {
         case "FETCH_GRADES":
             return {
