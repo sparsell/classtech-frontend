@@ -12,17 +12,19 @@ class LikeButton extends React.Component {
         }
     }
 
-    incrementCount = (event) => {
+    handleClick = (event) => {
         event.preventDefault()
-        this.props.incrementLikes(this.state)
-        console.log(this.state)
+        const newCount = this.state.count + 1
+        this.setState({
+            count: newCount
+        })
     }
 
     render() {
+        // console.log(this.props)
         return (
             <div className="like-button">
-                <button onClick={this.incrementCount} className="counter">Like</button>
-                <p><Icon name='heart' /></p>
+                <button onClick={this.handleClick} id={this.props.studentId}className="counter" ><Icon name='heart' /></button>
                 <p>{this.state.count}</p>
             </div>
         )
@@ -32,4 +34,4 @@ class LikeButton extends React.Component {
         return { count: state.count}
     }
 
-export default connect(mapStateToProps, { incrementLikes })(LikeButton)
+export default connect(mapStateToProps, {incrementLikes})(LikeButton)
