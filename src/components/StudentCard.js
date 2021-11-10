@@ -31,7 +31,7 @@ const StudentCard = (props) => {
                         <Card.Description>{phoneCheck(student)}</Card.Description>
                         <Card.Description>{otherDeviceCheck(student)}</Card.Description>
                         <Card.Description><p><Icon name='ban'/>{student.screen_time}</p></Card.Description>
-                        <LikeButton />
+                        <LikeButton studentId={student.id}/>
                 </Card.Content>
             </Card>
         </div>
