@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const Grades = (props) => {
-   console.log(props)
+//    console.log(props)
     return (
         <div>
             <h2>View By Grade</h2>

@@ -4,8 +4,9 @@ export default function counterReducer(state = {count: 0}, action) {
         return {
             count: state.count + 1
         }
+         return state
     }
-     return state
+    
 
     // switch (action.type) {
     //     case "INCREASE_LIKES":

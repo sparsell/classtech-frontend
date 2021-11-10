@@ -10,12 +10,17 @@ const GradeCard = (props) => {
     return (
         <div className="grade-card">
             <h2>Students in {grade.grade_name} </h2> 
-
-            <ul>
+            <div className="ui container grid">
+                <div className="ui row">
+                    {/* <div className="column eight wide"> */}
+            {/* <ul> */}
                 {grade.students.map(student => {
                     return <StudentCard student={student} key={student.id} />
                 })}
-            </ul>
+            {/* </ul> */}
+                    {/* </div> */}
+                </div>
+            </div>
 
             <Link to="/" className="ui primary button"> Home </Link>
             <Link to="/grades" className="ui primary button"> View by Grade </Link>
