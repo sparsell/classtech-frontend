@@ -7,7 +7,6 @@ import HomePage from './components/HomePage.js'
 import GradeCard from './components/GradeCard'
 import NewStudentForm from './components/NewStudentForm'
 import GradesContainer from './containers/GradesContainer';
-import StudentCard from './components/StudentCard'
 
 class App extends React.Component {
 
@@ -17,7 +16,6 @@ class App extends React.Component {
                 <Route exact path='/' render={() => <HomePage />} />
                 <Route exact path='/grades' render={(routeProps) => <GradesContainer {...routeProps}/>} />
                 <Route exact path='/students/new' render={(routeProps) => <NewStudentForm {...routeProps}/>} />
-                <Route exact path="/student/:id" render={(routeProps) => <StudentCard {...routeProps}/>} />
                 <Route exact path='/grades/:id/students' render={(routeProps) => <GradeCard {...routeProps}/>} />
             </div>
         ) 

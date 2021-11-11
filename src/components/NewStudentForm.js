@@ -30,6 +30,7 @@ class NewStudentForm extends React.Component {
         }
 
         handleSubmit = (event) => {
+            // debugger
             event.preventDefault()
             this.props.addStudent(this.state)
             this.setState({
@@ -40,7 +41,8 @@ class NewStudentForm extends React.Component {
                 has_other_device: false,
                 screen_time: ''
             })
-            this.props.history.push('/grades/')
+            // this.props.history.push('/grades', {state: this.state})
+    
         }
 
     render() {
@@ -65,7 +67,7 @@ class NewStudentForm extends React.Component {
                         name="grade_id"
                         value={this.state.grade_id}
                         onChange={this.handleChange}>
-                            <option value="" disabled selected>Select Your Grade</option>
+                            <option defaultValue="">Select Your Grade</option>
                             <option value="2">2nd Grade</option>
                             <option value="3">3rd Grade</option>
                             <option value="4">4th Grade</option>
@@ -83,7 +85,7 @@ class NewStudentForm extends React.Component {
                         name="school"
                         value={this.state.school} 
                         onChange={this.handleChange}> 
-                            <option value="" disabled selected>Select Your School</option>
+                            <option defaultValue="">Select Your School</option>
                             <option>North Street</option>
                             <option>Riverside</option>
                             <option>Parkway</option>
@@ -133,6 +135,7 @@ class NewStudentForm extends React.Component {
                     />
 
                     <Link to="/" className="ui primary button">Home</Link>
+                    <Link to="/grades" className="ui primary button">See Grades</Link>
                 </form>  
         </div>
         )

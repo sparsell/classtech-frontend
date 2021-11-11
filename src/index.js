@@ -12,13 +12,17 @@ import App from './App';
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
 
-const rootReducer = combineReducers({
-    studentReducer, 
-    gradeReducer
-})
+if (module.hot) {
+  module.hot.accept();
+}
 
+const rootReducer = combineReducers({
+    students: studentReducer, 
+    grades: gradeReducer
+})
+// console.log(rootReducer)
 const store = createStore(
-    gradeReducer,
+    rootReducer,
     composeEnhancers(applyMiddleware(thunk))
     )
 
