@@ -10,6 +10,10 @@ import studentReducer from './reducers/studentReducer'
 
 import App from './App';
 
+if (module.hot) {
+    module.hot.accept()
+}
+
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
 
 const rootReducer = combineReducers({
@@ -18,7 +22,7 @@ const rootReducer = combineReducers({
 })
 
 const store = createStore(
-    gradeReducer,
+    rootReducer,
     composeEnhancers(applyMiddleware(thunk))
     )
 
