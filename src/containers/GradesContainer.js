@@ -7,7 +7,6 @@ import fetchGrades from '../actions/fetchGrades.js'
 class GradesContainer extends React.Component {
 
     componentDidMount() {
-        console.log('grades container mounting')
             this.props.fetchGrades()
     }
 
@@ -21,7 +20,6 @@ class GradesContainer extends React.Component {
 }
 
  const mapStateToProps = state => {
-     console.log(state)
         return {
             grades: state.grades
         }

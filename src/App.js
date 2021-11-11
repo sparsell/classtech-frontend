@@ -6,7 +6,7 @@ import { Route } from 'react-router-dom'
 import HomePage from './components/HomePage.js'
 import GradeCard from './components/GradeCard'
 import NewStudentForm from './components/NewStudentForm'
-import GradesContainer from './containers/GradesContainer';
+import GradesContainer from './containers/GradesContainer'
 
 class App extends React.Component {
 
