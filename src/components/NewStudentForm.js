@@ -32,7 +32,8 @@ class NewStudentForm extends React.Component {
         handleSubmit = (event) => {
             // debugger
             event.preventDefault()
-            this.props.addStudent(this.state)
+            // this.props.addStudent(this.state)
+            this.props.addStudent(this.state, this.props.history)
             this.setState({
                 name: '',
                 school: '', 
@@ -41,8 +42,6 @@ class NewStudentForm extends React.Component {
                 has_other_device: false,
                 screen_time: ''
             })
-            // this.props.history.push('/grades', {state: this.state})
-    
         }
 
     render() {
@@ -68,13 +67,13 @@ class NewStudentForm extends React.Component {
                         value={this.state.grade_id}
                         onChange={this.handleChange}>
                             <option defaultValue="">Select Your Grade</option>
-                            <option value="2">2nd Grade</option>
-                            <option value="3">3rd Grade</option>
-                            <option value="4">4th Grade</option>
-                            <option value="5">5th Grade</option>
-                            <option value="6">6th Grade</option>
-                            <option value="7">7th Grade</option>
-                            <option value="8">8th Grade</option>
+                            <option value="1">2nd Grade</option>
+                            <option value="2">3rd Grade</option>
+                            <option value="3">4th Grade</option>
+                            <option value="4">5th Grade</option>
+                            <option value="5">6th Grade</option>
+                            <option value="6">7th Grade</option>
+                            <option value="7">8th Grade</option>
                     </select>
                         
                     <br></br>
