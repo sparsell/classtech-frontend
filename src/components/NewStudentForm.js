@@ -30,9 +30,7 @@ class NewStudentForm extends React.Component {
         }
 
         handleSubmit = (event) => {
-            // debugger
             event.preventDefault()
-            // this.props.addStudent(this.state)
             this.props.addStudent(this.state, this.props.history)
             this.setState({
                 name: '',
