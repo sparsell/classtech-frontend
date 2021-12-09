@@ -31,7 +31,7 @@ class NewStudentForm extends React.Component {
 
         handleSubmit = (event) => {
             event.preventDefault()
-            this.props.addStudent(this.state)
+            this.props.addStudent(this.state, this.props.history)
             this.setState({
                 name: '',
                 school: '', 
@@ -40,7 +40,6 @@ class NewStudentForm extends React.Component {
                 has_other_device: false,
                 screen_time: ''
             })
-            this.props.history.push('/grades/')
         }
 
     render() {
@@ -65,14 +64,14 @@ class NewStudentForm extends React.Component {
                         name="grade_id"
                         value={this.state.grade_id}
                         onChange={this.handleChange}>
-                            <option value="" disabled selected>Select Your Grade</option>
-                            <option value="2">2nd Grade</option>
-                            <option value="3">3rd Grade</option>
-                            <option value="4">4th Grade</option>
-                            <option value="5">5th Grade</option>
-                            <option value="6">6th Grade</option>
-                            <option value="7">7th Grade</option>
-                            <option value="8">8th Grade</option>
+                            <option defaultValue="">Select Your Grade</option>
+                            <option value="1">2nd Grade</option>
+                            <option value="2">3rd Grade</option>
+                            <option value="3">4th Grade</option>
+                            <option value="4">5th Grade</option>
+                            <option value="5">6th Grade</option>
+                            <option value="6">7th Grade</option>
+                            <option value="7">8th Grade</option>
                     </select>
                         
                     <br></br>
@@ -83,7 +82,7 @@ class NewStudentForm extends React.Component {
                         name="school"
                         value={this.state.school} 
                         onChange={this.handleChange}> 
-                            <option value="" disabled selected>Select Your School</option>
+                            <option defaultValue="">Select Your School</option>
                             <option>North Street</option>
                             <option>Riverside</option>
                             <option>Parkway</option>
@@ -133,6 +132,7 @@ class NewStudentForm extends React.Component {
                     />
 
                     <Link to="/" className="ui primary button">Home</Link>
+                    <Link to="/grades" className="ui primary button">See Grades</Link>
                 </form>  
         </div>
         )
