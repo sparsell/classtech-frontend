@@ -1,15 +1,16 @@
-import React from 'react'
+import React from 'react';
+import { Container } from 'semantic-ui-react';
 
 const Greeting = () => {
     return (
-        
-            <div className="ui center aligned container" id="greeting">
-                <h1 className="greeting-header">ClassTech</h1>
-                    <p className="tagline">"You see darling, not everyone in your class has a phone."</p>
-                    <p><em>- every parent</em></p>
-            </div>
-       
+        <Container id="greeting-section">
+            {/* <div className="ui center aligned"> */}
+                <h1 className="app-logo">ClassTech</h1> 
+                <h1 className="tagline"> Who has a phone in your grade?</h1>     
+            {/* </div> */}
+        </Container>
     )
 }
 
 export default Greeting
+
