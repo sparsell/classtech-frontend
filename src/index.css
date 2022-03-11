@@ -1,10 +1,11 @@
 body {
-  margin: 1em;
+  /* margin: 1em; */
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: midnightblue;
 }
 
 code {
@@ -12,15 +13,15 @@ code {
     monospace;
 }
 
-.wrapper {
+/* .wrapper {
     border: black 2px solid;
     border-radius: 30px;
     margin: 5%;
     padding: 5%;
-}
+} */
 
 .logo {
-    background-color: #eee;
+    background-color: white;
     /* display: inline-block; */
     margin: 2em;
     padding: .5em;
@@ -42,15 +43,29 @@ code {
     display: inline-block;
 }
 
-#greeting {
-    background-color: salmon;
-    margin: 2em;
-    padding: 5em;
+
+.app-logo {
+    color: white;
+    background-color: hotpink;
+    font-weight: normal;
+    margin-bottom: 0;
+    font-size: 5em;
 }
+
+.tagline {
+    background-color: hotpink;
+    color: white;
+    font-size: 2em;
+}
+
+.greeting-section {
+    background-color: hotpink;
+}
+
 
 .greeting-header {
 font-size: 5em;
-color: white;
+color: salmon;
 }
 
 .tagline {
@@ -79,7 +94,7 @@ color: white;
     display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 100%;
 }
 
 .greeting {
